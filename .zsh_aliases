@@ -1,16 +1,27 @@
 # ZSH ALIASES
 
 ## git
-alias gs="git status"
 alias gas="git add ."
+alias gbr="git branch"
+alias gcm="git commit -m"
 alias gco="git checkout"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gldiff="gl -p"
+alias gs="git status"
+alias gst="git add .; git stash"
 
 ## npm
-alias runs="npm run start"
-alias runls="npm run lint:staged"
+alias ni="npm install"
+alias ndi="npm -D install"
+alias ngi="npm -g install"
 alias runla="npm run lint:all"
 alias runlf="npm run lint:fix"
+alias runls="npm run lint:staged"
+alias runs="npm run start"
 alias runt="npm run test"
+
+## terminal
+alias rr="exec zsh"
 
 ## WORK
 source ~/.zsh_aliases-work
