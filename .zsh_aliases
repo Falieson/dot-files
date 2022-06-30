@@ -1,0 +1,16 @@
+# ZSH ALIASES
+
+## git
+alias gs="git status"
+alias gas="git add ."
+alias gco="git checkout"
+
+## npm
+alias runs="npm run start"
+alias runls="npm run lint:staged"
+alias runla="npm run lint:all"
+alias runlf="npm run lint:fix"
+alias runt="npm run test"
+
+## WORK
+source ~/.zsh_aliases-work
