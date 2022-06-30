@@ -1,5 +1,5 @@
-source ~/.zsh_aliases
-source ~/.zsh_antibody
+source ~/.zsh_antibody  # load antibody first
+source ~/.zsh_aliases   # override w/ personal definitions
 
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
