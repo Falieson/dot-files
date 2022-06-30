@@ -3,5 +3,5 @@
 ## Setup ZSH
 
 ```bash
-brew instal antibody fig
+brew install antibody fig
 ```
