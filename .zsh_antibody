@@ -1,0 +1,57 @@
+### ANTTIBODY ###
+
+# load antibody
+source <(antibody init)
+
+# see base omz config: https://github.com/robbyrussell/oh-my-zsh/blob/master/templates/zshrc.zsh-template
+
+# where is antibody keeping its stuff?
+ANTIBODY_HOME="$(antibody home)"
+
+# set the theme to something, or blank if you use a non omz theme
+# https://github.com/denysdovhan/spaceship-zsh-theme 
+export ZSH_THEME=spaceship
+
+# tell omz where it lives
+export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
+
+# quit bugging me!
+DISABLE_AUTO_UPDATE="true"
+
+# omz!
+antibody bundle robbyrussell/oh-my-zsh
+
+# this is the antibody way of loading omz plugins if you don't use the plugins variable
+antibody bundle "
+  caarlos0/zsh-mkc
+  caarlos0/zsh-open-github-pr
+  djui/alias-tips
+  robbyrussell/oh-my-zsh path:plugins/battery
+  robbyrussell/oh-my-zsh path:plugins/brew
+  robbyrussell/oh-my-zsh path:plugins/command-not-found
+  robbyrussell/oh-my-zsh path:plugins/common-aliases
+  robbyrussell/oh-my-zsh path:plugins/compleat
+  robbyrussell/oh-my-zsh path:plugins/copybuffer
+  robbyrussell/oh-my-zsh path:plugins/copyfile
+  robbyrussell/oh-my-zsh path:plugins/copypath
+  robbyrussell/oh-my-zsh path:plugins/dirhistory
+  robbyrussell/oh-my-zsh path:plugins/git
+  robbyrussell/oh-my-zsh path:plugins/git-extras
+  robbyrussell/oh-my-zsh path:plugins/history
+  robbyrussell/oh-my-zsh path:plugins/macos
+  robbyrussell/oh-my-zsh path:plugins/sudo
+  robbyrussell/oh-my-zsh path:plugins/web-search
+  robbyrussell/oh-my-zsh path:plugins/z
+  robbyrussell/oh-my-zsh path:plugins/colored-man-pages 
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-completions
+  zsh-users/zsh-history-substring-search
+  zsh-users/zsh-syntax-highlighting
+"
+#   lukechilds/zsh-nvm
+
+
+# you can do plugins the omz way if you want... or load with antibody later
+# plugins=(
+#   z
+# )
